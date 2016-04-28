@@ -5,8 +5,8 @@ FROM    centos:centos7
 RUN yum install -y epel-release
 RUN yum install -y nodejs npm git
 
-RUN git clone https://github.com/bftemp/qtest.git
-RUN cd qtest; npm install
+RUN git clone https://github.com/bfilia/qliktest.git
+RUN cd qliktest; npm install
 
 EXPOSE  3000
-CMD ["node", "/qtest/."]
+CMD ["node", "/qliktest/."]
